@@ -13,5 +13,5 @@ Describe what your project is about and what it does
 Chicago, New York City and Washington data
 
 ### Credits
-This project was inspired by Udacity's nanodegree program, the data and resources were provided by Udacity
+This project was inspired by Udacity's Programming for Data Science Nanodegree program, the data and resources were provided by Udacity
 
