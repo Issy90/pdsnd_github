@@ -18,14 +18,13 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     # initializing city
-    city = None
-    cityInput = input('Please the city name these are options chicago, new york city or washington: ')
+    
+    city = input('Please the city name these are options chicago, new york city or washington: ').lower()
     # validating the input by checking if it is within the given range
-    while cityInput.lower() not in ['chicago','new york city','washington']:
+    while city.lower() not in ['chicago','new york city','washington']:
         print ('Sorry, that is not a correct option, try again.')
-        cityInput = input('Please the city name these are options chicago, new york city or washington: ')    
+        city = input('Please the city name these are options chicago, new york city or washington: ').lower()    
         
-    city = cityInput.lower()
     # TO DO: get user input for month (all, january, february, ... , june)
     
     # for ease of validation, all the correct inputs are inside the months list
@@ -188,6 +187,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
+        # used to display raw data
         display_raw_data(df)
         
 
