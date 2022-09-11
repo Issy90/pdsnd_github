@@ -41,13 +41,12 @@ def get_filters():
 
     days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 
               'friday', 'saturday', 'all']
-    dayInput = input('Please type the day for which you want the analysis e.g. sunday, monday and so on. If you want all days type \'all\': ')
+    day = input('Please type the day for which you want the analysis e.g. sunday, monday and so on. If you want all days type \'all\': ').lower()
     # validaing the input checking if it is inside the days list
-    while dayInput.lower() not in days :
+    while day not in days :
         print ('Sorry, that is not a correct option, try again.')
-        dayInput = input('Please type the day for which you want the analysis e.g. sunday, monday and so on. If you want all days type \'all\': ')
-        
-    day = dayInput.lower()
+        day = input('Please type the day for which you want the analysis e.g. sunday, monday and so on. If you want all days type \'all\': ').lower()
+    
     
     print (city, month, day)
     print('-'*40)
