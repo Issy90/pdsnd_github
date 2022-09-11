@@ -31,14 +31,11 @@ def get_filters():
     # for ease of validation, all the correct inputs are inside the months list
     months = ['january', 'february', 'march', 'april', 'may', 
               'june', 'all']
-    monthInput = input('Please type the month for which you want the analysis, our database only has the first 6 months i.e. january, february, march, april, may or june. If you want all months type \'all\': ')
+    month = input('Please type the month for which you want the analysis, our database only has the first 6 months i.e. january, february, march, april, may or june. If you want all months type \'all\': ').lower()
     # validating the input by checking if it is in the months list
-    while monthInput.lower() not in months :
+    while month.lower() not in months :
         print ('Sorry, that is not a correct option, try again.')
-        monthInput = input('Please type the month for which you want the analysis, our database only has the first 6 months i.e. january, february, march, april, may or june. If you want all months type \'all\': ')
-    
-    month = monthInput.lower()
-    
+        month = input('Please type the month for which you want the analysis, our database only has the first 6 months i.e. january, february, march, april, may or june. If you want all months type \'all\': ').lower()
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     # for ease of validation, all the correct inputs are inside the days list
 
