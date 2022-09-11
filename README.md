@@ -10,8 +10,8 @@ Analysis of the Bikeshare data
 Describe what your project is about and what it does
 
 ### Files used
-Include the files used
+Chicago, New York City and Washington data
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+This project was inspired by Udacity's nanodegree program, the data and resources were provided by Udacity
 
